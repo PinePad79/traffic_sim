@@ -115,3 +115,22 @@ Default destinations:
 ```bash
 sudo apt update
 sudo apt install -y python3 python3-tk curl iproute2
+
+## License
+
+This project is licensed under the Creative Commons
+Attribution–NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+✔ Allowed:
+- Educational use
+- Personal labs
+- Research
+- Workshops in academic environments (with prior consent from the Author)
+
+❌ Not allowed without permission:
+- Commercial use
+- Paid services
+- Bundling into products
+- Resale or redistribution for profit
+
+For commercial licensing, contact the author.
