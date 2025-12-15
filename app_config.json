@@ -1,23 +1,40 @@
 {
   "mode": "instructor",
   "banner": "INSTRUCTOR MODE \u2013 Controlled Lab Only (allow-list + named targets)",
-  "allowed_targets": [
+ "allowed_targets": [
     "10.0.0.0/8",
     "172.16.0.0/12",
     "192.168.0.0/16",
     "127.0.0.1/32",
     "31.166.141.166",
-    "143.110.186.184"
+    "207.38.70.29",
+    "143.110.186.184",
+    "154.223.131.237",
+    "117.16.142.9",
+    "103.19.3.109",
+    "158.247.222.165",
+    "109.123.233.251",
+    "194.140.199.218"
   ],
   "require_confirm": true,
   "targets": [
     {
       "name": "Target #1",
-      "ip": "31.166.141.166",
-      "expected_fortiguard": "C2 / Anti-Botnet (expected)"
+      "ip": "194.140.199.218",
+      "expected_fortiguard": "C2 / Botnet (expected)"
     },
     {
       "name": "Target #2",
+      "ip": "158.247.222.165",
+      "expected_fortiguard": "APT Attack / Zero Day (expected)"
+    },
+    {
+      "name": "Target #3",
+      "ip": "109.123.233.251",
+      "expected_fortiguard": "Post Infection Traffic / Botnet (expected)"
+    },
+    {
+      "name": "Target #4",
       "ip": "143.110.186.184",
       "expected_fortiguard": "Exploitation / Malicious (expected)"
     }
