@@ -34,6 +34,7 @@ It helps demonstrate and validate:
 - Antivirus (AV)
 - Web Filtering
 - Application Control
+- DNS Filtering
 - Intrusion Prevention System (IPS)
 - Indicators of Compromise (IOC / Threat Feeds)
 - DoS policies and traffic shaping
@@ -128,9 +129,19 @@ Default destinations:
 
 ---
 
+### 7️⃣ DNS Filtering
+- Controlled DNS queries over UDP/53 to a selectable DNS server
+- Used to demonstrate:
+  - FortiGate DNS Filtering profiles
+  - FortiGuard Secure DNS (SDNS) enforcement
+  - DNS sinkholing behavior (208.91.112.55)
+  - Filtering of public and internal DNS zones
+
+---
+
 ## 🖥️ Requirements (Ubuntu)
 
 ### Mandatory packages
 ```bash
 sudo apt update
-sudo apt install -y python3 python3-tk curl iproute2
+sudo apt install -y python3 python3-tk curl iproute2 dnsutils
